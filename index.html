@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Seu Nome">
+  <title>Solver Sudoku Skycraper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sudoku Skycraper (4x4)</h1>
+  </header>
+  <p>Exemplo: 4321 1222 4321 1222</p>
+  
+  <main>
+    <div id="sudoku-container">
+        <div class="visibility-inputs">
+          <label for="top">Top:</label>
+          <input id="top" type="number" pattern="[1-4]{4}" maxlength="4" placeholder="1-4">
+
+          <label for="bottom">Bottom:</label>
+          <input id="bottom" type="text" pattern="[1-4]{4}" maxlength="4" placeholder="1-4">
+
+          <label for="left">Left:</label>
+          <input id="left" type="text" pattern="[1-4]{4}" maxlength="4" placeholder="1-4">
+
+          <label for="right">Right:</label>
+          <input id="right" type="text" pattern="[1-4]{4}" maxlength="4" placeholder="1-4">
+        </div>
+      
+        <button class="solve" onclick="solveSudoku()">RESULT</button>
+        <button class="new" style="display: none;" onclick="refresh()">New game</button>
+        <pre id="result"></pre>
+      </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Sudoku Solver - Todos os direitos reservados.</p>
+    <p> by: Leandro Gertrudes</p>
+    <p><a style="text-decoration: none; color: rgb(21, 107, 107);" href="https://github.com/leandro-gertrudes">GitHub</a></p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>

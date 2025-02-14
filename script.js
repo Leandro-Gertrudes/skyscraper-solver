@@ -86,7 +86,7 @@ function solveSudoku() {
       });
       
 } else {
-    document.getElementById('result').textContent = 'error.';
+    document.getElementById('result').textContent = 'Error: Invalid input or solution not found.';
   }
 }
 
